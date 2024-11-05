@@ -7,7 +7,7 @@ import Button from "fulldev-ui/components/Button.astro";
 
 <Layout title="Welcome to Astro.">
   <main>
-    <Heading color="brand" contrast={false}> Hola mundo </Heading>
+    <Heading color="brand" contrast={false}> Hola ! </Heading>
     <CldUploadWidget
 			id="upload-widget"
       uploadPreset="Zombieland"
@@ -18,7 +18,7 @@ import Button from "fulldev-ui/components/Button.astro";
         language: "es",
       }}
     >
-      <Button color="brand" as="button">Upload</Button>
+      <Button color="brand" as="button">Carga tu imagen</Button>
     </CldUploadWidget>
   </main>
 </Layout>
@@ -33,7 +33,7 @@ import Button from "fulldev-ui/components/Button.astro";
 			// console.log('clduploadwidget:success', e.detail);
 			const publicId = e.detail.info.public_id;
 
-			navigate(`/photo?id=${publicId}`)
+			navigate(`/photo?id=${publicId}`)	
 		}) as EventListener)
 	}
 
